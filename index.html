@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kalkulator walut</title>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator Walut</legend>
+            <ul class="form__list">
+                <li class="form__listItem">
+                    <label>
+                        <span class="form__labelText">Waluta wejściowa:</span>
+                        <select class="form__input js-inCurrency">
+                            <option value="PLN" selected>PLN - polski złoty</option>
+                            <option value="USD">USD - dolar amerykański</option>
+                            <option value="EUR">EUR - euro</option>
+                            <option value="GBP">GBP - funt brytyjski</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label>
+                        <span class="form__labelText">Waluta wyjściowa:</span>
+                        <select class="form__input js-outCurrency">
+                            <option value="PLN">PLN - polski złoty</option>
+                            <option value="USD" selected>USD - dolar amerykański</option>
+                            <option value="EUR">EUR - euro</option>
+                            <option value="GBP">GBP - funt brytyjski</option>
+                        </select>
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label>
+                        <span class="form__labelText">Wprowadź kwotę:</span>
+                        <input class="form__input js-amount" type="number" min="0" step="0.01" required>
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <span class="form__result">Wynik: </span> <strong class="js-result"></strong>
+                </li>
+            </ul>
+            <button class="form__button">Przelicz</button>
+        </fieldset>
+    </form>
+    <footer class="footer">Dane pochodzą ze strony <a class="footer__link" rel="noreferrer noopener" target="_blank"
+            href="https://www.google.com/finance/">Google Finanse</a> w dniu 02.01.2023</footer>
+</body>
+
+</html>
