@@ -31,8 +31,12 @@
     display: inline-block;
 }
 
+.form__buttonConteiner{
+    text-align: center;
+}
+
 .form__button {
-    width: 100%;
+    width: 40%;
     padding: 7px;
     background-color: hsl(120, 100%, 26%);
     color: white;
@@ -40,6 +44,7 @@
     font-size: 17px;
     font-weight: 700;
     border-radius: 10px;
+    text-align: center;
 }
 
 .form__button:hover {
