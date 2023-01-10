@@ -3,10 +3,12 @@
 }
 
 .form__fieldset {
+    
     border-color: hsl(0, 0%, 30%);
     border-radius: 10px;
     border-width: 3px;
     border-style: solid;
+    background-color: white;
 }
 
 .form__legend {
